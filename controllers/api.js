@@ -26,7 +26,7 @@ exports.getImg = function(req, res){
     var mySubString;
     axios.get('https://www.instagram.com/p/'+id+'/')
         .then(response => {
-
+console.log(response)
             var str = response.data;
             var first = ",\"config_height\":799},{\"src\":\""
 
